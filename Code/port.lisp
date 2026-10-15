@@ -185,7 +185,7 @@
   (defmacro write-memory-barrier ()
     'nil))
 
-#+cl-amiga
+#+amilisp
 (progn
   (defun make-lock (&optional name)
     (declare (ignore name))
@@ -409,7 +409,7 @@
 (defun make-char (code bits)
   (code-char (+ code (ash bits 8))))
 
-#+cl-amiga
+#+amilisp
 (defun make-char (code bits)
   (code-char (+ code (ash bits 8))))
 
